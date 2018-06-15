@@ -108,8 +108,6 @@ a {
   height: 69px;
   background: url(images/plastic.png);
   background-size: cover;
-  pointer-events: none;
-  cursor: move;
 }
 
 .p9 {
@@ -119,7 +117,6 @@ a {
   width: 76px;
   height: 106px;
   background: url(images/milk.png);
-  pointer-events: none;
   background-size: cover
 }
 
