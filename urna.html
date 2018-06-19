@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="styles/style.css">
+
+  <title>Document</title>
+</head>
+<body>
+
+
+  <nav class="header-nav">
+
+    <div>
+      <a href="index.html" class="logo">Ŭrna</a>
+    </div>
+
+    <div class="pages">
+      <a href="">О контейнере</a>
+      <a href="">Переработка</a>
+      <a href="">Контакты</a>
+      <a href="" class="green">Корзина</a>
+    </div>
+
+  </nav>
+
+
+  <div class="all">
+
+      <section class="start">
+
+        <div class="container">
+
+          <div class="text start">
+            <h1>Начать осознанную жизнь легко вместе с Urna</h1>
+            <p>Новая система раздельного сбора отходов для дома и офиса с регулярным обслуживанием</p>
+          </div>
+
+        </div>
+
+
+      </section>
+
+
+      <section class="choise">
+
+        <nav class="choise-nav">
+          <a href="">Цвет</a>
+          <a href="">Комплектация</a>
+          <a href="">Отсеки</a>
+        </nav>
+
+        <div class="line"></div>
+
+        <div class="cards">
+          <div class="container-gray">
+            <div class="picture-1"></div>
+            <div class="container-color">Туманно-серый</div>
+          </div>
+
+          <div class="container-white">
+            <div class="picture-2"></div>
+            <div class="container-color">Чистый белый</div>
+          </div>
+
+          <div class="container-black">
+            <div class="picture-3"></div>
+            <div class="container-color">Смольный чёрный</div>
+          </div>
+        </div>
+
+      </section>
+
+
+      <section class="about left">
+
+        <div class="text left">
+          <h2>Закажи контейнер</h2>
+          <p>Соберите для себя идельную комплектацию контейнера со встроенной системой датчиков
+          и отслеживайте заполнение отделений. Простая форма и небольшие габариты впишутся
+          в интерьер любой квартиры!</p>
+          <div class="order">
+            <a href="">Заказать</a>
+            <div class="strelka"></div>
+          </div>
+          <a href="" class="learn-more">Узнать больше</a>
+        </div>
+
+
+
+        <div class="illustration"></div>
+
+
+
+      </section>
+
+
+      <section class="about right">
+
+        <div class="prototype"></div>
+
+        <div class="text right">
+          <h2>Скачай приложение </h2>
+          <p>Больше не нужно выносить мусор: как только отделения вашего контейнера будут заполнены, мы заберём ёмкости с отходами и направим их по перерабатывающим заводам России.</p>
+          <div class="appstore"></div>
+        </div>
+
+
+
+      </section>
+
+
+      <section class="about left">
+
+        <div class="text left-2">
+          <h2>Сдавай и зарабатывай</h2>
+          <p>Получайте бонусные баллы с каждого сданного отхода и следите за личным прогрессом. Уже через год использования контейнера вы можете окупить его стоимость!</p>
+          <div class="order">
+            <a href="">Заказать</a>
+            <div class="strelka"></div>
+          </div>
+        </div>
+
+
+
+        <div class="bag"></div>
+
+      </section>
+
+
+
+      <section class="about center">
+
+
+        <div class="text center">
+          <h2>Оставайтесь на связи!</h2>
+          <p>Подпишись на <a href="" class="telegramm">наш канал в телеграмме</a>, чтобы быть в курсе новостей в области экологии.</p>
+        </div>
+
+        <nav class="footer">
+          <a href="">©2018 Urna</a>
+          <a href="">Карьера</a>
+          <a href="">Партнёрам</a>
+          <a href="">Twitter</a>
+          <a href="">Обратная связь</a>
+        </nav>
+
+      </section>
+
+  </div>
+
+
+
+
+
+  <script type="text/javascript" src="jquery-3.3.1.js"></script>
+
+  <script>
+
+    $(document).ready(function(){
+
+      $(window).on("scroll", function() {
+        if ($(window).scrollTop() < 150) $('.logo').text('Ŭrna');
+        else if ($(window).scrollTop() > 150 && $(window).scrollTop() < 300) $('.logo').text('Ürna');
+        else if ($(window).scrollTop() > 300 && $(window).scrollTop() < 450) $('.logo').text('Ùrna');
+        else if ($(window).scrollTop() > 450 && $(window).scrollTop() < 600) $('.logo').text('Ůrna');
+        else if ($(window).scrollTop() > 600 && $(window).scrollTop() < 750) $('.logo').text('Ūrna');
+        else if ($(window).scrollTop() > 750 && $(window).scrollTop() < 900) $('.logo').text('Úrna');
+        else if ($(window).scrollTop() > 900 && $(window).scrollTop() < 1050) $('.logo').text('Ũrna');
+
+        else if ($(window).scrollTop() > 1050 && $(window).scrollTop() < 1200) $('.logo').text('Ŭrna');
+        else if ($(window).scrollTop() > 1200 && $(window).scrollTop() < 1350) $('.logo').text('Ürna');
+        else if ($(window).scrollTop() > 1350 && $(window).scrollTop() < 1500) $('.logo').text('Ùrna');
+        else if ($(window).scrollTop() > 1500 && $(window).scrollTop() < 1650) $('.logo').text('Ůrna');
+        else if ($(window).scrollTop() > 1650 && $(window).scrollTop() < 1800) $('.logo').text('Ūrna');
+        else if ($(window).scrollTop() > 1800 && $(window).scrollTop() < 1950) $('.logo').text('Úrna');
+        else if ($(window).scrollTop() > 1950 && $(window).scrollTop() < 2100) $('.logo').text('Ũrna');
+
+        else if ($(window).scrollTop() > 2100 && $(window).scrollTop() < 2250) $('.logo').text('Ŭrna');
+        else if ($(window).scrollTop() > 2250 && $(window).scrollTop() < 2400) $('.logo').text('Ürna');
+        else if ($(window).scrollTop() > 2400 && $(window).scrollTop() < 2550) $('.logo').text('Ùrna');
+        else if ($(window).scrollTop() > 2550 && $(window).scrollTop() < 2700) $('.logo').text('Ůrna');
+        else if ($(window).scrollTop() > 2700 && $(window).scrollTop() < 2850) $('.logo').text('Ūrna');
+        else if ($(window).scrollTop() > 2850 && $(window).scrollTop() < 3000) $('.logo').text('Úrna');
+        else if ($(window).scrollTop() > 3000 && $(window).scrollTop() < 3150) $('.logo').text('Ũrna');
+
+        else if ($(window).scrollTop() > 3150 && $(window).scrollTop() < 3300) $('.logo').text('Ŭrna');
+        else if ($(window).scrollTop() > 3300 && $(window).scrollTop() < 3450) $('.logo').text('Ürna');
+        else if ($(window).scrollTop() > 3450 && $(window).scrollTop() < 3600) $('.logo').text('Ùrna');
+        else if ($(window).scrollTop() > 3750 && $(window).scrollTop() < 3900) $('.logo').text('Ůrna');
+        else if ($(window).scrollTop() > 4050 && $(window).scrollTop() < 4200) $('.logo').text('Ūrna');
+
+
+
+
+
+
+
+
+
+      });
+
+
+    })
+
+
+
+
+
+
+
+
+  </script>
+
+
+
+
+
+
+</body>
+</html>
+
+
+
+<!-- Ŭrna, Ürna, Úrna, Ūrna, Ùrna, Ůrna, Ũrna -->

@@ -1,0 +1,384 @@
+@import "reset.css";
+
+@font-face{
+
+font-family: 'fugue';
+
+src: url('../fonts/fugue-regular.ttf') format('truetype');
+
+}
+
+@font-face{
+
+font-family: 'Quiza Pro';
+
+src: url('../fonts/Quiza Pro Regular.otf');
+
+}
+
+@font-face{
+
+font-family: 'Helvetica';
+
+src: url('../fonts/Helvetica.otf');
+
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-width: 320px;
+}
+
+
+
+
+.all {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.about {
+  display: flex;
+}
+
+
+section {
+  height: 100vh;
+}
+
+h1 {
+  font-family: 'fugue';
+  font-size: 48px;
+  color: #4a4a4a;
+  text-align: center;
+  line-height: 54px;
+}
+
+p {
+  font-family: 'Quiza Pro';
+  font-size: 25px;
+  color: #4a4a4a;
+  text-align: center;
+  line-height: 37px;
+  margin-top: 24px;
+}
+
+h2 {
+  font-family: 'fugue';
+  font-size: 38px;
+  color: #4a4a4a;
+  text-align: center;
+}
+
+
+.header-nav {
+  position: absolute;
+  width: 100vw;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.logo {
+  position: fixed;
+  margin-left: 34px;
+  margin-top: 23px;
+  font-family: 'fugue';
+  font-size: 51px;
+  color: #000000;
+  z-index: 5;
+}
+
+.pages {
+  margin-top: 30px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+}
+
+
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: #4a4a4a;
+  margin-right: 39px;
+  font-family: 'Helvetica';
+  font-size: 22px;
+}
+
+
+.green {
+  display: inline-block;
+  color: #fff;
+  background-color: #54E28E;
+  line-height: 48px;
+  text-align: center;
+  width: 122px;
+  height: 48px;
+}
+
+.start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 1440px;
+  height: 602px;
+  background-image: url('../images/container.png')
+}
+
+.text.start {
+  margin-bottom: 100px;
+  width: 566px;
+}
+
+.order {
+  display: block;
+  margin-top: 100px;
+  background-color: #54E28E;
+  width: 167px;
+  height: 48px;
+}
+
+.order a {
+  display: flex;
+  color: #fff;
+  font-size: 20px;
+  line-height: 48px;
+  margin-left: 20px;
+  text-align: center;
+}
+
+.strelka {
+  width: 32px;
+  height: 10px;
+  background-image: url('../images/strelka.png');
+}
+
+.learn-more {
+  font-size: 20px;
+  margin-top: 16px;
+  margin-left: 12px;
+  color: #9B9B9B;
+  text-decoration: underline;
+}
+
+
+
+
+
+.choise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.choise-nav {
+  margin-top: 116px;
+}
+
+.choise-nav a {
+  color: #9b9b9b;
+}
+
+.choise-nav a:first-child {
+  color: #4a4a4a;
+}
+
+.choise-nav a:last-child {
+  margin-right: 0;
+}
+
+
+
+
+
+
+.line {
+  position: relative;
+  margin-top: 5px;
+  background-color: #4a4a4a;
+  width: 66px;
+  height: 1.5px;
+  left: -158px;
+}
+
+
+.cards {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+  height: 430px;
+  margin-top: 130px;
+}
+
+.container-gray, .container-white, .container-black {
+  width: 303px;
+  height: 430px;
+  margin-right: 57px;
+}
+
+.cards div:last-child {
+  margin-right: 0;
+}
+
+.picture-1 {
+  width: 303px;
+  height: 340px;
+  background-image: url('../images/container_gray.png');
+}
+
+.picture-2 {
+  width: 303px;
+  height: 340px;
+  background-image: url('../images/container_white.png');
+}
+
+.picture-3 {
+  width: 303px;
+  height: 340px;
+  background-image: url('../images/container_black.png');
+}
+
+.container-color {
+  font-family: 'fugue';
+  font-size: 22px;
+  color: #4a4a4a;
+  text-align: center;
+  margin-top: 40px;
+}
+
+
+
+.text.left, .text.right, .text.left-2  {
+  width: 484px;
+}
+
+.text.left {
+  margin-top: 160px;
+  margin-left: 390px;
+}
+
+.text.right {
+  margin-top: 160px;
+}
+
+.text.left-2 {
+  margin-top: 60px;
+  margin-right: 70px;
+}
+
+
+
+
+
+
+
+.left p, .left-2 p .right p, .center p {
+  font-size: 21px;
+  line-height: 29px;
+}
+
+.left p, .left-2 p, .right p {
+  color: #9b9b9b;
+  text-align: left;
+  font-size: 21px;
+  line-height: 29px;
+}
+
+.left h2, .left-2 h2, .right h2  {
+  text-align: left;
+}
+
+
+.telegramm {
+  margin-right: 0;
+  text-decoration: underline;
+  font-family: 'Quiza Pro';
+  font-size: 21px;
+}
+
+
+.text {
+  width: 700px;
+  height: 250px;
+}
+
+.text.center {
+  margin-top: 300px;
+  width: 410px;
+}
+
+
+
+
+.center {
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+}
+
+.footer {
+  margin-bottom: 40px;
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer a {
+  font-size: 18px;
+  color: #000;
+}
+
+.appstore {
+  margin-top: 100px;
+  width: 175px;
+  height: 52px;
+  background-size: cover;
+  background-image: url('../images/AppStore.png');
+}
+
+.bag {
+  position: relative;
+  top: 300px;
+  right: 0px;
+  width: 433px;
+  height: 433px;
+  background-size: cover;
+  background-image: url('../images/bag.png');
+
+}
+
+.illustration {
+  position: relative;
+  top: 380px;
+  right: 290px;
+  width: 674px;
+  height: 422px;
+  background-size: cover;
+  background-image: url('../images/illustration.png');
+  margin-left: 226px;
+  bottom: 100px;
+}
+
+.prototype {
+  margin-top: 80px;
+  margin-right: 230px;
+  width: 299px;
+  height: 609px;
+  background-size: cover;
+  background-image: url('../images/prototype.png');
+}
