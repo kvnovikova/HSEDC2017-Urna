@@ -4,9 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" href="styles/style.css">
 
-  <title>Document</title>
+  <title>Urna-about</title>
 </head>
 <body>
 
@@ -44,7 +45,7 @@
       </section>
 
 
-      <section class="choise">
+      <section id="choose" class="choise">
 
         <nav class="choise-nav">
           <a href="">Цвет</a>
@@ -82,7 +83,7 @@
           и отслеживайте заполнение отделений. Простая форма и небольшие габариты впишутся
           в интерьер любой квартиры!</p>
           <div class="order">
-            <a href="">Заказать</a>
+            <a href="#choose">Заказать</a>
             <div class="strelka"></div>
           </div>
           <a href="" class="learn-more">Узнать больше</a>
@@ -118,7 +119,7 @@
           <h2>Сдавай и зарабатывай</h2>
           <p>Получайте бонусные баллы с каждого сданного отхода и следите за личным прогрессом. Уже через год использования контейнера вы можете окупить его стоимость!</p>
           <div class="order">
-            <a href="">Заказать</a>
+            <a href="#choose">Заказать</a>
             <div class="strelka"></div>
           </div>
         </div>
@@ -200,6 +201,23 @@
 
 
 
+
+
+
+
+      });
+
+      $(function() {
+        $('.sidebar a').each(function() {
+          $(this).on('click', function(e) {
+            e.preventDefault();
+            var scrollTo = $(this).attr('href');
+            var whitespace = scrollTo == '#choose' ? 70 : 30
+            $('html,body').animate({
+              scrollTop: $(scrollTo).offset().top - whitespace
+            }, 1000);
+          });
+        });
       });
 
 
