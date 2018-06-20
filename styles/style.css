@@ -145,7 +145,9 @@ a {
 }
 
 .order {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-top: 100px;
   background-color: #54E28E;
   width: 167px;
@@ -153,18 +155,19 @@ a {
 }
 
 .order a {
-  display: flex;
   color: #fff;
   font-size: 20px;
-  line-height: 48px;
+  line-height: 20px;
   margin-left: 20px;
-  text-align: center;
 }
 
 .strelka {
-  width: 32px;
+  position: relative;
+  left: -30px;
+  display: inline-block;
+  width: 40px;
   height: 10px;
-  background-image: url('../images/strelka.png');
+  background-image: url('../images/strelka.svg');
 }
 
 .learn-more {

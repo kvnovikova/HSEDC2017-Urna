@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="186px" height="53px" viewBox="0 0 186 53" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="landing-desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Основной-лендинг" transform="translate(-282.000000, -3910.000000)">
+            <g id="Group" transform="translate(282.000000, 3910.000000)">
+                <rect id="Rectangle-Copy-8" fill="#54E28E" x="0" y="0" width="186" height="53"></rect>
+                <text id="Заказать" font-family="Helvetica" font-size="22" font-weight="normal" line-spacing="22" fill="#FFFFFF">
+                    <tspan x="20" y="38">Заказать </tspan>
+                </text>
+                <path d="M129.5,26.5 L165.5,26.5" id="Line-Copy" stroke="#FFFFFF" stroke-width="1.5" fill="#FFFFFF" stroke-linecap="square"></path>
+                <path id="Line-Copy-decoration-1" d="M165.5,26.5 L154.7,23.5 L154.7,29.5 L165.5,26.5 Z" stroke="#FFFFFF" stroke-width="1.5" fill="#FFFFFF" stroke-linecap="square"></path>
+            </g>
+        </g>
+    </g>
+</svg>
