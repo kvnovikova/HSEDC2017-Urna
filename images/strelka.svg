@@ -1,27 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="45px" height="17px" viewBox="0 0 45 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg width="36px" height="9px" viewBox="0 0 36 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
-    <title>Line Copy</title>
+    <title>Line</title>
     <desc>Created with Sketch.</desc>
-    <defs>
-        <path d="M414.5,3935.5 L448.679357,3935.5" id="path-1"></path>
-        <filter x="-22.1%" y="-191.7%" width="144.3%" height="616.7%" filterUnits="objectBoundingBox" id="filter-2">
-            <feMorphology radius="0.75" operator="dilate" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
-            <feOffset dx="0" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
-            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
-            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"></feComposite>
-            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
-        </filter>
-    </defs>
-    <g id="landing-desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Основной-лендинг" transform="translate(-409.000000, -3929.000000)">
-            <rect id="Rectangle-Copy-2" fill="#FFFFFF" x="0" y="3325" width="1440" height="826"></rect>
-            <rect id="Rectangle-Copy-8" fill="#54E28E" x="282" y="3909" width="186" height="53"></rect>
-            <g id="Line-Copy" stroke-linecap="square">
-                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
-                <use stroke="#FFFFFF" stroke-width="1.5" fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
-            </g>
-            <path id="Line-Copy-decoration-1" d="M448.679357,3935.5 L437.879357,3932.5 L437.879357,3938.5 L448.679357,3935.5 Z" stroke-linecap="square"></path>
+    <defs></defs>
+    <g id="landing-desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="square">
+        <g id="Основной-лендинг" transform="translate(-394.000000, -2132.000000)" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1.35">
+            <path d="M395.457143,2136.5 L426.70684,2136.5" id="Line"></path>
+            <path id="Line-decoration-1" d="M426.70684,2136.5 L415.90684,2133.5 L415.90684,2139.5 L426.70684,2136.5 Z"></path>
         </g>
     </g>
 </svg>

@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" href="styles/style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.css" rel="stylesheet">
 
   <title>Urna-about</title>
 </head>
@@ -28,9 +29,9 @@
   </nav>
 
 
-  <div class="all">
+  <div class="all" id="fullpage">
 
-      <section class="start">
+      <section class="start section">
 
         <div class="container">
 
@@ -45,7 +46,7 @@
       </section>
 
 
-      <section id="choose" class="choise">
+      <section id="choose" class="choise section">
 
         <nav class="choise-nav">
           <a href="">Цвет</a>
@@ -72,10 +73,14 @@
           </div>
         </div>
 
+        div
+
       </section>
 
 
-      <section class="about left">
+      <section class="about left section">
+
+        <div class="sign1"></div>
 
         <div class="text left">
           <h2>Закажи контейнер</h2>
@@ -89,6 +94,8 @@
           <a href="" class="learn-more">Узнать больше</a>
         </div>
 
+        <div class="sign2"></div>
+
 
 
         <div class="illustration"></div>
@@ -98,9 +105,11 @@
       </section>
 
 
-      <section class="about right">
+      <section class="about right section">
 
         <div class="prototype"></div>
+
+        <div class="sign4"></div>
 
         <div class="text right">
           <h2>Скачай приложение </h2>
@@ -110,10 +119,13 @@
 
 
 
+
+
       </section>
 
 
-      <section class="about left">
+      <section class="about left section">
+
 
         <div class="text left-2">
           <h2>Сдавай и зарабатывай</h2>
@@ -124,21 +136,30 @@
           </div>
         </div>
 
+        <div class="sign5"></div>
+
 
 
         <div class="bag"></div>
+
+        <div class="sign3"></div>
 
       </section>
 
 
 
-      <section class="about center">
+      <section class="about center section">
+
+        <div class="sign6"></div>
 
 
         <div class="text center">
           <h2>Оставайтесь на связи!</h2>
           <p>Подпишись на <a href="" class="telegramm">наш канал в телеграмме</a>, чтобы быть в курсе новостей в области экологии.</p>
         </div>
+
+        <div class="sign7"></div>
+
 
         <nav class="footer">
           <a href="">©2018 Urna</a>
@@ -157,6 +178,7 @@
 
 
   <script type="text/javascript" src="jquery-3.3.1.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
 
   <script>
 
@@ -193,35 +215,60 @@
         else if ($(window).scrollTop() > 3750 && $(window).scrollTop() < 3900) $('.logo').text('Ůrna');
         else if ($(window).scrollTop() > 4050 && $(window).scrollTop() < 4200) $('.logo').text('Ūrna');
 
-
-
-
-
-
-
-
-
-
-
-
-
       });
 
-      $(function() {
-        $('.sidebar a').each(function() {
-          $(this).on('click', function(e) {
-            e.preventDefault();
-            var scrollTo = $(this).attr('href');
-            var whitespace = scrollTo == '#choose' ? 70 : 30
-            $('html,body').animate({
-              scrollTop: $(scrollTo).offset().top - whitespace
-            }, 1000);
-          });
-        });
+      $('.container-gray').click(function(){
+        $('.container-white').toggleClass('not-choisen');
+        $('.container-black').toggleClass('not-choisen');
       });
 
+      $('.container-white').click(function(){
+        $('.container-gray').toggleClass('not-choisen');
+        $('.container-black').toggleClass('not-choisen');
+      });
+
+      $('.container-black').click(function(){
+        $('.container-gray').toggleClass('not-choisen');
+        $('.container-white').toggleClass('not-choisen');
+      });
+
+      // $('#fullpage').fullpage({
+      //
+    	// 	scrollingSpeed: 700,
+    	// 	autoScrolling: true,
+    	// 	fitToSection: true,
+    	// 	fitToSectionDelay: 1000,
+    	// 	scrollBar: false,
+    	// 	easing: 'easeInOutCubic',
+    	// 	easingcss3: 'ease',
+    	// 	loopBottom: false,
+    	// 	loopTop: false,
+    	// 	continuousVertical: false,
+    	// 	continuousHorizontal: false,
+    	// 	scrollHorizontally: false,
+    	// 	interlockedSlides: false,
+    	// 	dragAndMove: false,
+    	// 	offsetSections: false,
+    	// 	resetSliders: false,
+    	// 	fadingEffect: false,
+    	// 	scrollOverflow: false,
+    	// 	scrollOverflowReset: false,
+    	// 	scrollOverflowOptions: null,
+    	// 	touchSensitivity: 15,
+    	// 	normalScrollElementTouchThreshold: 5,
+    	// 	bigSectionsDestination: null,
+      //   sectionSelector: '.section',
+      //
+      //
+      //
+  	  // });
 
     })
+
+
+
+
+
 
 
 

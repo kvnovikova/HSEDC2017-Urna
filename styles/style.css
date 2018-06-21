@@ -2,26 +2,27 @@
 
 @font-face{
 
-font-family: 'fugue';
+  font-family: 'fugue';
 
-src: url('../fonts/fugue-regular.ttf') format('truetype');
-
-}
-
-@font-face{
-
-font-family: 'Quiza Pro';
-
-src: url('../fonts/Quiza Pro Regular.otf');
+  src: url('../fonts/fugue-regular.ttf') format('truetype');
 
 }
 
 @font-face{
 
-font-family: 'Helvetica';
+  font-family: 'Quiza Pro';
 
-src: url('../fonts/Helvetica.otf');
+  src: url('../fonts/Quiza Pro Regular.otf');
 
+}
+
+@font-face {
+  font-family: "Helvetica";
+  src: url('../fonts/HelveticaRegular.ttf');
+}
+
+* {
+  transition: all 0.3s ease;
 }
 
 body {
@@ -52,18 +53,18 @@ section {
 
 h1 {
   font-family: 'fugue';
-  font-size: 48px;
+  font-size: 60px;
   color: #4a4a4a;
   text-align: center;
-  line-height: 54px;
+  line-height: 68px;
 }
 
 p {
   font-family: 'Quiza Pro';
-  font-size: 25px;
+  font-size: 32px;
   color: #4a4a4a;
   text-align: center;
-  line-height: 37px;
+  line-height: 46px;
   margin-top: 24px;
 }
 
@@ -100,6 +101,8 @@ h2 {
   display: flex;
   align-items: center;
 }
+
+
 
 
 
@@ -140,8 +143,8 @@ a {
 }
 
 .text.start {
-  margin-bottom: 100px;
-  width: 566px;
+  margin-bottom: 85px;
+  width: 700px;
 }
 
 .order {
@@ -155,18 +158,18 @@ a {
 }
 
 .order a {
+  font-family: 'Helvetica';
   color: #fff;
   font-size: 20px;
-  line-height: 20px;
-  margin-left: 20px;
+  line-height: 48px;
+  margin-right: 65px;
+  vertical-align: middle;
 }
 
 .strelka {
-  position: relative;
-  left: -30px;
-  display: inline-block;
-  width: 40px;
-  height: 10px;
+  margin-left: -50px;
+  width: 35px;
+  height: 9px;
   background-image: url('../images/strelka.svg');
 }
 
@@ -213,9 +216,9 @@ a {
   position: relative;
   margin-top: 5px;
   background-color: #4a4a4a;
-  width: 66px;
+  width: 64px;
   height: 1.5px;
-  left: -158px;
+  left: -155px;
 }
 
 
@@ -231,7 +234,9 @@ a {
   width: 303px;
   height: 430px;
   margin-right: 57px;
+  cursor: pointer;
 }
+
 
 .cards div:last-child {
   margin-right: 0;
@@ -263,6 +268,10 @@ a {
   margin-top: 40px;
 }
 
+.not-choisen {
+  opacity: 0.3;
+}
+
 
 
 .text.left, .text.right, .text.left-2  {
@@ -275,15 +284,35 @@ a {
 }
 
 .text.right {
-  margin-top: 160px;
+  margin-top: 210px;
 }
 
 .text.left-2 {
-  margin-top: 60px;
+  margin-top: 160px;
   margin-right: 70px;
 }
 
 
+
+
+.line.complectation {
+  left: -12px;
+  width: 164px;
+}
+
+.choise-nav.complectation a:nth-child(2) {
+  color: #4a4a4a;
+}
+
+
+.line.cell {
+  width: 87px;
+  left: 143px;
+}
+
+.choise-nav.cell a:last-child {
+  color: #4a4a4a;
+}
 
 
 
@@ -320,7 +349,7 @@ a {
 }
 
 .text.center {
-  margin-top: 300px;
+  margin-top: 180px;
   width: 410px;
 }
 
@@ -356,7 +385,7 @@ a {
 
 .bag {
   position: relative;
-  top: 300px;
+  top: 270px;
   right: 0px;
   width: 433px;
   height: 433px;
@@ -378,10 +407,71 @@ a {
 }
 
 .prototype {
-  margin-top: 80px;
-  margin-right: 230px;
+  margin-top: 130px;
+  margin-right: 130px;
   width: 299px;
   height: 609px;
   background-size: cover;
   background-image: url('../images/prototype.png');
+}
+
+
+
+
+.sign2 {
+  position: relative;
+  top: 110px;
+  left: 400px;
+  width: 23px;
+  height: 9px;
+  background-size: cover;
+  background-image: url('../images/sign4.svg');
+}
+
+.sign4 {
+  position: relative;
+  top: 160px;
+  left: 400px;
+  width: 26px;
+  height: 20px;
+  background-size: cover;
+  background-image: url('../images/sign2.svg');
+}
+
+.sign3 {
+  position: relative;
+  top: 110px;
+  width: 23px;
+  height: 16px;
+  background-size: cover;
+  background-image: url('../images/sign1.svg');
+}
+
+.sign5 {
+  position: relative;
+  top: 510px;
+  right: 170px;
+  width: 26px;
+  height: 20px;
+  background-size: cover;
+  background-image: url('../images/sign2.svg');
+}
+
+.sign6 {
+  position: relative;
+  top: 360px;
+  right: 400px;
+  width: 23px;
+  height: 15px;
+  background-size: cover;
+  background-image: url('../images/sign3.svg');
+}
+
+.sign7 {
+  position: relative;
+  left: 500px;
+  width: 23px;
+  height: 9px;
+  background-size: cover;
+  background-image: url('../images/sign4.svg');
 }
