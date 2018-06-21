@@ -300,7 +300,7 @@ a {
   width: 164px;
 }
 
-.choise-nav.complectation a:nth-child(2) {
+.complectation.isOpen {
   color: #4a4a4a;
 }
 
@@ -310,11 +310,83 @@ a {
   left: 143px;
 }
 
-.choise-nav.cell a:last-child {
+.cell.isOpen {
   color: #4a4a4a;
 }
 
+.howMany {
+  display: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
 
+
+h3 {
+  margin-top: 30px;
+  font-family: 'fugue';
+  font-size: 28px;
+  color: #4a4a4a;
+}
+
+.twoCont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 814px;
+  height: 402px;
+  border: 2px solid #4a4a4a;
+  border-radius: 5px;
+  margin-top: 48px;
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  width: 397px;
+  height: 388px;
+  border: 2px solid #4a4a4a;
+  border-radius: 5px;
+}
+
+.inner:first-child {
+  margin-right: 4px;
+}
+
+.circles {
+  display: flex;
+  align-items: center;
+  margin-top: 62px;
+}
+
+.lineCircle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 496px;
+  height: 21px;
+  background-size: cover;
+  background-image: url('../images/circles.svg');
+  margin-left: 16px;
+}
+
+h4 {
+  font-family: 'fugue';
+  font-size: 20px;
+  color: #4a4a4a;
+}
+
+.numer {
+  margin-bottom: 20px;
+  margin-right: 224px;
+  font-size: 16px;
+  color: #fff;
+
+}
 
 
 
@@ -351,6 +423,21 @@ a {
 .text.center {
   margin-top: 180px;
   width: 410px;
+}
+
+.value {
+  font-family: 'fugue';
+  font-size: 18px;
+  line-height: 18px;
+  color: #9B9B9B;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.value:first-child {
+  font-size: 22px;
+  line-height: 22px;
+  color: #4a4a4a;
 }
 
 

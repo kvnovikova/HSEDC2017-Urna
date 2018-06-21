@@ -49,9 +49,9 @@
       <section id="choose" class="choise section">
 
         <nav class="choise-nav">
-          <a href="">Цвет</a>
-          <a href="">Комплектация</a>
-          <a href="">Отсеки</a>
+          <a href="#choose">Цвет</a>
+          <a href="#choose" class="complectation">Комплектация</a>
+          <a href="#choose" class="cell" >Отсеки</a>
         </nav>
 
         <div class="line"></div>
@@ -72,6 +72,28 @@
             <div class="container-color">Смольный чёрный</div>
           </div>
         </div>
+
+       <div class="howMany">
+
+         <div class="circles">
+           <h4>Сколько отделений:</h4>
+           <div class="lineCircle"><p class="numer">2</p></div>
+         </div>
+
+         <div class="twoCont">
+           <div class="inner">
+             <p class="value">10 л</p>
+             <p class="value">120 х 30 х 30 см</p>
+           </div>
+           <div class="inner">
+             <p class="value">10 л</p>
+             <p class="value">120 х 30 х 30 см</p>
+           </div>
+         </div>
+
+
+         <h3>Выберите количество отделений контейнера</h3>
+       </div>
 
 
       </section>
@@ -179,6 +201,7 @@
   <script type="text/javascript" src="jquery-3.3.1.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.6/jquery.fullPage.min.js"></script>
 
+
   <script>
 
     $(document).ready(function(){
@@ -216,6 +239,13 @@
 
       });
 
+      $(".twoCont").hide();
+      $(".howMany").hide();
+      $(".circles").hide();
+
+
+
+
       $('.container-gray').click(function(){
         $('.container-white').toggleClass('not-choisen');
         $('.container-black').toggleClass('not-choisen');
@@ -231,36 +261,26 @@
         $('.container-white').toggleClass('not-choisen');
       });
 
-      // $('#fullpage').fullpage({
-      //
-    	// 	scrollingSpeed: 700,
-    	// 	autoScrolling: true,
-    	// 	fitToSection: true,
-    	// 	fitToSectionDelay: 1000,
-    	// 	scrollBar: false,
-    	// 	easing: 'easeInOutCubic',
-    	// 	easingcss3: 'ease',
-    	// 	loopBottom: false,
-    	// 	loopTop: false,
-    	// 	continuousVertical: false,
-    	// 	continuousHorizontal: false,
-    	// 	scrollHorizontally: false,
-    	// 	interlockedSlides: false,
-    	// 	dragAndMove: false,
-    	// 	offsetSections: false,
-    	// 	resetSliders: false,
-    	// 	fadingEffect: false,
-    	// 	scrollOverflow: false,
-    	// 	scrollOverflowReset: false,
-    	// 	scrollOverflowOptions: null,
-    	// 	touchSensitivity: 15,
-    	// 	normalScrollElementTouchThreshold: 5,
-    	// 	bigSectionsDestination: null,
-      //   sectionSelector: '.section',
-      //
-      //
-      //
-  	  // });
+      $('.complectation').click(function(){
+        $('.complectation').addClass('isOpen');
+        $('.line').addClass('complectation');
+        $(".cards").fadeOut(200);
+        $(".twoCont").show(400);
+        $(".howMany").show(400);
+        $(".circles").show(400);
+
+
+
+
+      });
+
+      $('.cell').click(function(){
+        $('.cell').addClass('isOpen');
+        $('.line').addClass('cell');
+
+      });
+
+
 
     })
 
